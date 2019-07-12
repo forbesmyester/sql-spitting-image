@@ -1,0 +1,24 @@
+{
+  "name": "sql-spitting-image",
+  "version": "1.0.0",
+  "description": "Functional JS library modelled on SQL keywords.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forbesmyester/sql-spitting-image.git"
+  },
+  "keywords": [
+    "sql",
+    "fp",
+    "functional"
+  ],
+  "author": "Matt Forrester <github.com@speechmarks.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forbesmyester/sql-spitting-image/issues"
+  },
+  "homepage": "https://github.com/forbesmyester/sql-spitting-image#readme"
+}
