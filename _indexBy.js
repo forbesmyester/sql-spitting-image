@@ -17,7 +17,7 @@ function generateIndexByKey(columnNames, row) {
  *
  * @param columnNames string[]|string
  * @param results Row[]
- * @return {[columnName: string]: Row[]}
+ * @return Map<columnName: string, Row>
  */
 function indexBy(columnNames, results) {
     return results.reduce((acc, row) => {
