@@ -1,6 +1,6 @@
 {
   "name": "sql-spitting-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Functional JS library modelled on SQL keywords.",
   "main": "index.js",
   "scripts": {

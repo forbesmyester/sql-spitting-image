@@ -1,4 +1,4 @@
-const indexBy = require('./_indexBy');
+const indexBy = require('./_indexBy').indexBy;
 let assert = require('assert');
 
 
@@ -70,12 +70,12 @@ function getGroupValues(cols, gRows) {
 function groupBy(cols, aggregations) {
     return function(rows) {
         const indexed = indexBy(cols, rows);
-        const indexKeys = Object.keys(indexed);
+        const indexKeys = Array.from(indexed.keys());
         return indexKeys.map((ik) => {
             return Object.assign(
                 {},
-                processGroup(aggregations, indexed[ik]),
-                getGroupValues(cols, indexed[ik])
+                processGroup(aggregations, indexed.get(ik)),
+                getGroupValues(cols, indexed.get(ik))
             );
         });
     }
